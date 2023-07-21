@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       if (password_verify($Password, $user['password'])) {
         // Mật khẩu hợp lệ, đăng nhập thành công
         $_SESSION['user_id'] = $user['ID'];
-        echo "Đăng nhập thành công!";
+        // echo "Đăng nhập thành công!";
         // header("Location: dashboard.php");
       } else {
         echo "Mật khẩu không đúng. Vui lòng thử lại.";
@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       $insertQuery = "INSERT INTO users (username, email, password) VALUES ('$Username', '$Email', '$hashedPassword')";
 
       if (mysqli_query($conn, $insertQuery)) {
-        echo "Đăng ký thành công!";
+        // echo "Đăng ký thành công!";
         // header("Location: login.php");
       } else {
         echo "Đã xảy ra lỗi khi thực hiện đăng ký: " . mysqli_error($conn);
