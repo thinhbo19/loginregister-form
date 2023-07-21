@@ -244,6 +244,8 @@ header {
   font-weight: 1000;
   font-size: 17px;
   transition: all 250ms;
+  z-index: 100;
+  cursor: pointer;
   overflow: hidden;
 }
 
