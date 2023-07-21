@@ -136,6 +136,10 @@ header {
   transition: none;
   transform: translateX(-500px);
 }
+.wrapper.active-forgot .form-box.login {
+  transition: none;
+  transform: translateX(-500px);
+}
 
 .wrapper .form-box.register {
   position: absolute;
@@ -144,6 +148,15 @@ header {
 }
 
 .wrapper.active .form-box.register {
+  transition: transform 0.18s ease;
+  transform: translateX(0px);
+}
+.wrapper .form-box.forgot-password-form{
+  position: absolute;
+  transform: translateX(400px);
+  transition: transform 0.18s ease;
+}
+.wrapper.active-forgot .form-box.forgot-password-form {
   transition: transform 0.18s ease;
   transform: translateX(0px);
 }

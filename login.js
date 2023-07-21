@@ -3,6 +3,8 @@ const loginLink = document.querySelector(".login-link");
 const registerLink = document.querySelector(".register-link");
 const iconClose = document.querySelector(".icon-close");
 const btnLoginPopup = document.querySelector(".btnLogin-popup");
+const aForgot = document.querySelector('.forgot-pass');
+const Back = document.querySelector('.login-link-back');
 
 registerLink.addEventListener("click", () => {
   wrapper.classList.add("active");
@@ -19,3 +21,9 @@ btnLoginPopup.addEventListener("click", () => {
 });
 
 
+aForgot.addEventListener("click", () => {
+  wrapper.classList.add("active-forgot");
+});
+Back.addEventListener("click", () => {
+  wrapper.classList.remove("active-forgot");
+});
